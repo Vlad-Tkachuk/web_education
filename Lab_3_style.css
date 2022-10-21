@@ -1,0 +1,88 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+
+table {
+font-size: 20px;
+width: 65%;
+height: 80%;
+}
+
+table, tr, th, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+} 
+
+th {
+font-size: 24px;
+}
+
+td {
+	padding-left: 10x;
+	text-align: center;
+}
+
+.period {
+text-align: left;
+font-size: 20px;
+padding-left: 10px;
+font-size: italic;
+}
+
+.Period
+{
+	text-align: left;
+	word-wrap: inherit;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 7px;
+}
+
+.lightyellow {
+    background-color: rgb(250, 243, 148);
+}
+
+.lightblue {
+    background-color: rgba(166, 144, 255, 0.493);
+}
+
+.lightred {
+    background-color: rgba(255, 138, 125, 0.603);
+}
+
+.mint {
+    background-color: rgba(129, 252, 168, 0.553);
+}
+
+.purple {
+    background-color: rgba(245, 172, 250, 0.795);
+}
+
+.v {
+    font-size: 25px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.aspect {
+    width: 10%;
+}
+
+.simple {
+    height: 70px;
+	width: 18%;
+}
+
+.progressive {
+	width: 19%;
+}
+
+.perfect {
+	width: 17%
+}
+
+.perfect_progressive {
+	width: 17%
+}
