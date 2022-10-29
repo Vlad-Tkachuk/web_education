@@ -1,0 +1,124 @@
+body
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+ol.first_tabl span
+{
+    background-color: rgb(163, 43, 43);
+    color: white;
+    margin: 5px;
+    padding-left: 1em;
+    padding-right   : 1em;
+
+    
+}
+
+ol.first_tabl li
+{
+    width: 98%;
+    background-color: rgb(242, 83, 83);
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+}
+
+ol.first_tabl
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: palevioletred;
+    color:white;
+    list-style-type: none;
+}
+
+
+
+.first_tabl li::before
+{
+    padding-left: 1em   ;
+    content:  counter(number) ;
+    counter-increment: number;
+}
+
+
+#h2-two_tabl
+{
+margin-left: 2em;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+.two_tabl li::before
+{
+    content: url(unchecked_16.png);
+    padding-right: 5px;
+    padding-top: 2px;
+}
+.two_tabl li::after
+{padding-left: 3em;
+    content: url(./arrow_16.png);
+    text-decoration: none;
+}
+
+.two_tabl  .mark2::before
+{
+    content: url(checked_16.png);
+}
+
+.mark1 
+{
+    background-color: rgba(142, 190, 231, 0.67);
+}
+
+.mark2
+{
+    text-decoration: line-through;
+    background-color: rgba(239, 238, 239, 0.986);
+}
+
+.mark3
+{
+    background-color: rgb(182, 224, 255);
+
+}
+
+.mark1 , .mark2 , .mark3
+{
+    padding: 4px;
+}
+
+.gray
+{
+    color: rgb(198, 195, 195);
+}
+
+.link
+{
+    color:blue;
+}
+
+dd
+{
+    list-style-type: none;
+}
+
+#dd-tabl3
+{
+    margin-left: 0%;
+}
+
+#string 
+{
+    padding-left: 2em;
+}
+
+dt.ft
+{
+    font-style: italic;
+}
