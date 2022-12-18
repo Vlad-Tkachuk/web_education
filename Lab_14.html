@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_14</title>
+</head>
+<body>
+    <input type="button" value="1.1" onclick="first1()">
+        <script>
+            function first1() 
+            {
+             let time1 = new Date;
+             time1.setHours(prompt("Set Hours"));
+             time1.setMinutes(prompt("Set Minutes"));
+             time1.setSeconds(prompt("Set Seconds"));
+             
+             alert(time1.getHours() + ":" + time1.getMinutes() + ":" + time1.getSeconds())
+            }
+        </script>
+    <input type="button" value="1.2" onclick="first2()">
+        <script>
+            function first2() 
+            {
+            let time2 = new Date;
+            time2.setHours(prompt("Set Hours"));
+            time2.setMinutes(prompt("Set Minutes"));
+            time2.setSeconds(prompt("Set Seconds"));
+            time2.setSeconds(time2.getSeconds() + 1);
+            
+            alert(time2.getHours() + ":" + time2.getMinutes() + ":" + time2.getSeconds());
+            }
+        </script>
+
+    <input type="button" value="1.3" onclick="first3()">
+        <script>
+            function first3() 
+            {
+            let time3 = new Date;
+            time3.setHours(prompt("Set Hours"));
+            time3.setMinutes(prompt("Set Minutes"));
+            time3.setSeconds(prompt("Set Seconds"));
+            time3.setSeconds(time3.getSeconds() - 1);
+            
+            alert(time3.getHours() + ":" + time3.getMinutes() + ":" + time3.getSeconds());
+            }
+        </script>
+
+
+    <input type="button" value="1.4" onclick="first4()">
+        <script>
+            function first4() 
+            {
+            let time4 = new Date;
+            
+            time4.setHours(prompt("Set Hours"));
+            time4.setMinutes(prompt("Set Minutes"));
+            time4.setSeconds(prompt("Set Seconds"));
+            let sec = prompt("на скільки секунд будемо змінювати час?") - " ";
+            time4.setSeconds(time4.getSeconds() + sec);
+
+            
+            
+            alert(time4.getHours() + ":" + time4.getMinutes() + ":" + time4.getSeconds());
+            }
+        </script>
+
+    <input type="button" value="2" onclick="second1()">
+        <script>
+            function second1() 
+            {
+             let array = [];
+             for (let index = 0; index < 10; index++) {
+                let a = Math.round( Math.random() * 100 );
+                array.push(a);
+             }
+
+                alert(array);
+
+                
+                let arraypar = [];
+                let check = false;
+                for (let i = 0; i < array.length; i++) 
+                {
+                    if (array[i] % 7 == 0) { check = true;}
+                if (array[i] % 2 == 0) {
+                    
+                    arraypar.push(array[i]);
+                    }
+                }
+                alert(arraypar);
+                alert("чи є в масиві число кратне 7: " + check);
+
+                array.sort(function(a, b){return b - a});
+                alert(array);
+
+                for (let index = array.length/2; index < array.length; index++){
+                     array[index]=0;
+                   
+                }
+                alert(array);
+                
+                const countItems = array.reduce((acc, item) => {
+                acc[item] = acc[item] ? acc[item] + 1 : 1; 
+                return acc;
+                     }, {});
+
+                 const result = Object.keys(countItems).filter((item) => countItems[item] > 1);
+                alert(result);
+
+                let num = prompt("який елемент видалити із масива") - 1;
+                array.splice(num, 1);
+                alert(array);
+                
+
+            }
+        </script>
+
+     <input type="button" value="3" onclick="third1()">
+        <script>
+            function third1() 
+            {
+                let string = prompt("Введіть рядок");
+                let check = 0;
+                for (let index = 0; index < string.length; index++) {
+                    if(string[index]==" "){check++;}
+                    
+                }
+                alert("Кількість пробілів = "+check);
+
+                let newStr = string[0].toUpperCase() + string.slice(1);
+                alert(newStr);
+
+                check = 1;
+                if(string[0]== null) {check = 0}
+                else
+                {
+                for (let index = 0; index < string.length; index++) {
+                    if(string[index]==" " || string[index]=="." ){check++;}
+                    
+                }
+                alert("Кількість слів = "+check);
+                }
+
+                
+                    let checkk = true; 
+                    const lastIndex = string.length - 1;
+                    for (let i = 0; i < string.length / 2; i++) {
+                        if (string[i] !== string[lastIndex - i]) {
+                            alert("Це не полідром");
+                            checkk = false;
+                            
+                        }
+                    }
+                    if(checkk)alert("Це полідром");
+                
+            }
+            
+        </script>
+</body>
+</html>

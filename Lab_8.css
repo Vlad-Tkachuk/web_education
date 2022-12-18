@@ -1,0 +1,85 @@
+.l1, .l2, .l3, .l4 {
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0;
+    margin-top: 30px;
+    transition: .5s;
+    background-color: white;
+}
+table button {
+    border-radius: 5px;
+    width: 75px;
+    height: 30px;
+    border-color: transparent;
+    text-transform: uppercase;
+    color: white; 
+}
+tbody tr:first-child {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+tr td {
+    font-weight: 600;
+    padding: 10px;
+
+}
+tbody tr:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: lightgray;
+}
+
+.l1:hover, .l2:hover, .l3:hover, .l4:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+.l1 {
+    left: 5vw;
+    top: 20px;
+}
+.l2 {
+    left: 30vw;
+    top: 20px;
+}
+.l3 {
+    left: 54vw;
+    top: 20px;
+}
+.l4 {
+    left: 78vw;
+    top: 20px;
+}
+.l1 thead, .l2 thead, .l3 thead, .l4 thead {
+    text-transform: uppercase;
+}
+th {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.l1 th {border-bottom: 3px solid rgb(203, 82, 123);}
+.l2 th {border-bottom: 3px solid rgb(233, 152, 2);}
+.l3 th {border-bottom: 3px solid rgb(104, 104, 218);}
+.l4 th {border-bottom: 3px solid rgb(30, 198, 134);}
+
+.l1 button {
+    background-color: rgb(227, 107, 147);
+}
+.l2 button {
+    background-color: rgb(236, 154, 3);
+}
+.l3 button {
+    background-color: rgb(108, 108, 227);
+}
+.l4 button {
+    background-color: rgb(26, 205, 137);
+}
